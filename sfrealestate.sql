@@ -12,7 +12,6 @@ CREATE DATABASE "realEstate"
     CONNECTION LIMIT = -1;
 	
 DROP TABLE sfrealestate;
-DROP TABLE njrealestate;
 
 CREATE TABLE "sfrealestate" (
 	"sale_type" VARCHAR,

@@ -10,9 +10,11 @@ CREATE DATABASE "Flight_Keywords"
     LC_CTYPE = 'English_United States.1252'
     TABLESPACE = pg_default
     CONNECTION LIMIT = -1;
-	
+
+--drop TABLE flight_tickets;
+
 create TABLE "flight_tickets" (
-	"searchTerms" VARCHAR,
+	"searchTerms" VARCHAR PRIMARY KEY=TRUE,
 	"rank" VARCHAR,
 	"title" VARCHAR,
 	"snippet" VARCHAR,
@@ -40,4 +42,21 @@ create TABLE "flight_tickets" (
 	"formattedTotalResults" INT
 	); 
 	
+select rank, snippet, cx from flight_tickets; 
+
 select * from flight_tickets;
+
+select rank, title, displaylink from flight_tickets;
+
+
+
+SELECT searchterms
+FROM flight_tickets;
+
+select distinct 
+rank, title
+from 
+flight_tickets;
+
+
+ 

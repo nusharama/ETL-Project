@@ -31,6 +31,4 @@ CREATE TABLE "sfairbnb" (
 	"calculated_host_listings_count" INT,
 	"availability_365" INT
 );
-
 SELECT * FROM sfairbnb;
-
